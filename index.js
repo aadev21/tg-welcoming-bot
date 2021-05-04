@@ -2,14 +2,15 @@ const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = 'YOUR_TG_TOKEN_HERE';
-
+// replace all values below
 const coinName = 'YOUR_COIN_NAME';
-const coinContract = 'YOUR_BSC_CONTRACT";
+const coinContract = 'YOUR_BSC_CONTRACT';
 const slippageTx = '12';
 const website = 'YOUR_WEBSITE';
 const twitter = 'YOUR_TWITTER_ACCOUNT';
 const timeoutAutoDelete = '23000'; // 23000 => 23 seconds
-const v1 = false;
+const v1 = false; //Pancakeswap version
+// end
 
 const pscBuyLink = 'https://' + ( (v1) ? 'v1' : '' ) + 'exchange.pancakeswap.finance/#/swap?outputCurrency=' + coinContract;
 
